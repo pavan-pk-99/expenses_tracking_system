@@ -24,14 +24,14 @@ export default function DashBoard(props) {
   }
 
   const handleLogOut = async () => {
-    const res = await fetch("/user/logout");
+    const res = await fetch("https://expenses-tracking-system.onrender.com/user/logout");
     props.setIsLoggedIn(false);
     navigate("/");
   };
 
   useEffect(() => {
     const checklogin = async () => {
-      const res = await fetch("/user/auth");
+      const res = await fetch("https://expenses-tracking-system.onrender.com/user/auth");
       const data = await res.json();
 
       if (data.msg == "User Login Found") {

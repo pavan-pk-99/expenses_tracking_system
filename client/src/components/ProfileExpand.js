@@ -6,7 +6,7 @@ export default function ProfileExpand() {
   const [user, setUser] = useState([]);
   useEffect(() => {
     async function handleGetUser() {
-      const res = await fetch("/user/getProfile");
+      const res = await fetch("https://expenses-tracking-system.onrender.com/user/getProfile");
       const data = await res.json();
       if (data.errors) {
         navigate("/");
