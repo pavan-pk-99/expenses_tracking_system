@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(Router);
 mongoose
-  .connect("mongodb+srv://pavankumarp2003:<password>@cluster0.j90wg4e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  .connect("mongodb+srv://pavankumarp:OH7sTQFBxueE2c6g@expensessystem.jkhf3xi.mongodb.net/?retryWrites=true&w=majority&appName=expensessystem")
   .then((result) => {
     app.listen(port);
     console.log("connected to mongodb and listening at port 5000");
