@@ -8,7 +8,7 @@ const Router = require("./routers");
 dotenv.config({ path: "./config.env" });
 const app = express();
 
-const dbURI ="mongodb+srv://pavankumarp2003:ovQgYCo2oYBGR7I2@cluster0.j90wg4e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const dbURI ="mongodb+srv://pavankumarp:OH7sTQFBxueE2c6g@expensessystem.jkhf3xi.mongodb.net/?retryWrites=true&w=majority&appName=expensessystem";
 const port = process.env.PORT || 5000;
 SECRET_KEY="mysecretkey"
 app.use(express.static("public"));
